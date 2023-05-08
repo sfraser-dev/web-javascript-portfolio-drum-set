@@ -24,11 +24,12 @@ function playAssociatedSound(letter) {
 // For each drum class element, add a button click event listener.
 const numberOfDrumButtons = document.querySelectorAll(".drum").length;
 for (let i = 0; i < numberOfDrumButtons; i++) {
-    document.querySelectorAll(".drum")[i].addEventListener("click",
+    const drumButton = document.querySelectorAll(".drum")[i];
+    drumButton.addEventListener("click",
         function () {
-            const theLetter = this.innerHTML; 
-            playAssociatedSound(theLetter);
-            buttonAnimation(theLetter);
+            const letter = this.innerHTML; 
+            playAssociatedSound(letter);
+            buttonAnimation(letter);
         });
 }
 

@@ -1,21 +1,17 @@
 $color_1: #e0e8eb;
-$color_2: #e1f84c;
+$color_2: #4169d8;
 $color_3: #18223d;
-$color_4: #4169d8;
 $font-family_1: "Arvo", cursive;
 
 body {
 	text-align: center;
 	background-color: $color_3;
 	font-family: $font-family_1;
+	color: $color_1;
 }
 h1 {
-	font-size: 5rem;
-	color: $color_1;
-	text-shadow: 3px 0 $color_3;
-}
-footer {
-	color: $color_1;
+	font-size: 1.5rem;
+	text-shadow: 2px 0 $color_2;
 }
 .w {
 	background-image: url("../images/tom1.png");
@@ -38,26 +34,45 @@ footer {
 .l {
 	background-image: url("../images/kick.png");
 }
-.drumsetAlign {
-	margin: 10% auto;
+.flex-container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;;
+	justify-content: center;
 }
 .pressed {
 	opacity: 0.5;
 }
 .drum {
-	outline: none;
-	border: 10px solid $color_4;
-	border-radius: 15px;
+	flex: 40%;
+	margin: 10px;
+	border: 7px solid $color_2;
+	border-radius: 10px;
+	text-align: center;
 	font-size: 5rem;
 	font-family: $font-family_1;
-	font-weight: 900;
-	line-height: 1;
-	display: inline-block;
-	width: 150px;
-	height: 150px;
-	text-align: center;
-	margin: 10px;
+	font-weight: 300;
+	line-height: 1.25;
 	background-color: $color_1;
 	color: $color_2;
-	text-shadow: 3px 0 $color_3;
+	text-shadow: 5px 0 $color_3;
+}
+
+@media only screen and (min-width: 400px) {
+	h1 {
+		font-size: 2rem;
+	}
+}
+@media only screen and (min-width: 768px) {
+	h1 {
+		font-size: 3rem;
+	}
+}
+@media only screen and (min-width: 992px) {
+	.drum {
+		flex: 30%;
+	}
+	h1 {
+		font-size: 4rem;
+	}
 }

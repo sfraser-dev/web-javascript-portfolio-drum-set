@@ -10,10 +10,6 @@ h1 {
   text-shadow: 2px 0 #4169d8;
 }
 
-.w {
-  background-image: url("../images/tom11.png");
-}
-
 .a {
   background-image: url("../images/tom22.png");
 }
@@ -24,6 +20,10 @@ h1 {
 
 .d {
   background-image: url("../images/tom44.png");
+}
+
+.f {
+  background-image: url("../images/tom11.png");
 }
 
 .j {

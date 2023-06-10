@@ -10,10 +10,10 @@ const lSound = "./sounds/kick-bass.mp3";
 // Play the sound associated with each drum class element.
 function playAssociatedSound(letter) {
     switch (letter) {
-        case "w": (new Audio(wSound)).play(); break;
         case "a": (new Audio(aSound)).play(); break;
         case "s": (new Audio(sSound)).play(); break;
         case "d": (new Audio(dSound)).play(); break;
+        case "f": (new Audio(wSound)).play(); break;
         case "j": (new Audio(jSound)).play(); break;
         case "k": (new Audio(kSound)).play(); break;
         case "l": (new Audio(lSound)).play(); break;
@@ -35,10 +35,10 @@ for (let i = 0; i < numberOfDrumButtons; i++) {
 
 // Listen in the entire page for key presses associated with particular drums. 
 document.addEventListener("keydown", function (event) {
-    if (event.code === "KeyW" && event.key === "w") { playAssociatedSound("w"); buttonAnimation("w"); }
     if (event.code === "KeyA" && event.key === "a") { playAssociatedSound("a"); buttonAnimation("a"); }
     if (event.code === "KeyS" && event.key === "s") { playAssociatedSound("s"); buttonAnimation("s"); }
     if (event.code === "KeyD" && event.key === "d") { playAssociatedSound("d"); buttonAnimation("d"); }
+    if (event.code === "KeyF" && event.key === "f") { playAssociatedSound("f"); buttonAnimation("f"); }
     if (event.code === "KeyJ" && event.key === "j") { playAssociatedSound("j"); buttonAnimation("j"); }
     if (event.code === "KeyK" && event.key === "k") { playAssociatedSound("k"); buttonAnimation("k"); }
     if (event.code === "KeyL" && event.key === "l") { playAssociatedSound("l"); buttonAnimation("l"); }

@@ -1,7 +1,7 @@
 $color_1: #e0e8eb;
 $color_2: #4169d8;
 $color_3: #18223d;
-$font-family_1: "Arvo", cursive;
+$font-family_1: cursive;
 
 body {
 	text-align: center;
@@ -14,25 +14,25 @@ h1 {
 	text-shadow: 2px 0 $color_2;
 }
 .w {
-	background-image: url("../images/tom1.png");
+	background-image: url("../images/tom11.png");
 }
 .a {
-	background-image: url("../images/tom2.png");
+	background-image: url("../images/tom22.png");
 }
 .s {
-	background-image: url("../images/tom3.png");
+	background-image: url("../images/tom33.png");
 }
 .d {
-	background-image: url("../images/tom4.png");
+	background-image: url("../images/tom44.png");
 }
 .j {
-	background-image: url("../images/snare.png");
+	background-image: url("../images/snare22.png");
 }
 .k {
-	background-image: url("../images/crash.png");
+	background-image: url("../images/crash22.png");
 }
 .l {
-	background-image: url("../images/kick.png");
+	background-image: url("../images/kick22.png");
 }
 .flex-container{
 	display: flex;
@@ -52,7 +52,7 @@ h1 {
 	font-size: 5rem;
 	font-family: $font-family_1;
 	font-weight: 300;
-	line-height: 1.25;
+	line-height: 1.5;
 	background-color: $color_1;
 	color: $color_2;
 	text-shadow: 5px 0 $color_3;

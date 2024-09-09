@@ -1,1 +1,1 @@
-Drum set using html, css and JS
+Drum set webpage using HTML, CSS and JS.
